@@ -19,7 +19,7 @@ const Marque = () => {
      
   });
   return (
-    <div className='overflow-hidden whitespace-nowrap  w-full  '>
+    <motion.div data-scroll data-scroll-section data-scroll-speed="." initial={{opacity:0 }}  transition={{delay:.3}}animate={{opacity:1}} className='overflow-hidden whitespace-nowrap  w-full  '>
         <div className='relative'>
         <div data-speed={20} style={{transform:`translate(-${wx}px,-${wy}px) ` }}  className="z-[1] w-[20vw] h-[15vh] bg-blue-800 absolute top-10 left-3/4 mix-blend-difference"></div>
         <div data-speed={20} style={{transform:`translate(${wx}px,${wy}px) ` }}  className="z-[1] w-[10vw] h-[20vh] bg-blue-800 absolute top-20 left-1/4 mix-blend-difference"></div>
@@ -27,7 +27,7 @@ const Marque = () => {
         
       <motion.h1  initial={{x:0}} animate={{x:"-100%"}} transition={{ease:"linear", repeat:Infinity,duration:10}} className='  text-blue-800 font-[anton]  text-[12vw]'> A JOURNEY OF DESIGNING AND DEVELOPING WEBSITES </motion.h1>
    
-    </div>
+    </motion.div>
   )
 }
 

@@ -1,0 +1,16 @@
+@keyframes rtbcorner {
+     0% {
+      top:100%;
+      left: 0%;
+    }
+    100% {
+        top:0%;
+        left: 100%;
+      }
+    }
+
+    .rbt{
+      animation-name: rtbcorner ;
+      animation-range: view();
+      background-color: aqua;
+    }

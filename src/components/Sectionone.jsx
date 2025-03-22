@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
+import Earth from "./earth";
 const Sectionone = () => {
   const [rotate, setRotate] = useState(0);
+  
 
   useEffect(() => {
     const handleMouseMove = (e) => {
@@ -22,45 +24,50 @@ const Sectionone = () => {
   }, []); 
 
   return (
-    <div className="px-4 h-[70vh] flex justify-between items-center">
-      <div>
+    <div data-scroll data-scroll-section data-scroll-speed="-.2" className=" relative  h-[70vh] flex justify-center items-center">
+      
+      <div className=" flex justify-center  items-center gap-4 mt-[2vh] h-[70vh] w-[90vw] ">
+        
+      <motion.div initial={{y:"100px" ,opacity:0}} animate={{y:"0px" , opacity:1}}  className="overflow-hidden flex flex-row justify-end items-end   relative rounded-xl bg-blue-800 h-full ">
+      
+      <Earth className></Earth>
+      <div className=" abi flex flex-col items-end  h-auto w-[90%]">
+        
 
-        <div
-          style={{ transform: `rotate(-${rotate}deg)` }}
-          className="h-[28vw] w-[28vw] bg-blue-800">
+
+        <motion.div initial={{y:"100px" ,scale:0}} transition={{delay:.1}} animate={{y:"0px" , scale:1}} className="flex flex-row overflow-hidden">
+          <h1  className="text-[#1335ae] text-[20vh] md:leading-[20vh] font-[anton] md:text-[20vh] ">HELLO!</h1>
+          <h1 className=" text-[#2b4bc1] text-[20vh] md:leading-[20vh] font-[anton] md:text-[20vh] ">HELLO!</h1>
+          <h1 className=" text-[#1335ae] text-[20vh] md:leading-[20vh] font-[anton] md:text-[20vh] ">HELLO!</h1>
+          <motion.h1 initial={{color:"#1335ae"}} transition={{delay:.4}} animate={{color:"#ffffff"}} className="   md:leading-[20vh] font-[anton] text-[20vh] ">HELLO!</motion.h1>
+        </motion.div>
+        <motion.div className="flex flex-row overflow-hidden">
+          <h1 className="text-[#1335ae] md:leading-[20vh] font-[anton] text-[10vw] ">IAM</h1>
+          <h1 className=" text-[#2b4bc1] md:leading-[20vh] font-[anton] text-[10vw] ">IAM</h1>
+          <h1 className=" text-[#102f9d] md:leading-[20vh] font-[anton] text-[10vw] ">IAM</h1>
+          <h1 className=" text-[#1335ae] md:leading-[20vh] font-[anton] text-[10vw] ">IAM</h1>
+          <h1 className=" text-[#2b4bc1] md:leading-[20vh] font-[anton] text-[10vw] ">IAM</h1>
+          <h1 className=" text-[#1335ae] md:leading-[20vh] font-[anton] text-[10vw] ">IAM</h1>
+          <motion.h1 initial={{color:"#1335ae"}} transition={{delay:.6}} animate={{color:"#ffffff"}}  className="  md:leading-[20vh] font-[anton] text-[10vw] ">IAM</motion.h1>
+        </motion.div>
+        <motion.img src="me2.webp" className=" z-0 absolute top-1/2 left-1/4 md:top-1/3 -translate-y-2/6 -translate-x-1/2 md:left-1/2 md:h-[40vw] h-[50vw]  " alt="" />  
+        <motion.div className=" z-10 flex flex-row overflow-hidden">
+          <h1 className="text-[#1335ae] leading-[20vh] text-nowrap font-[anton] text-[10vw] ">PRATYUSH CHAUHAN</h1>
+          <h1 className=" text-[#2b4bc1] leading-[20vh] text-nowrap font-[anton] text-[10vw] ">PRATYUSH CHAUHAN</h1>
+          <motion.h1 initial={{color:"#1335ae"}} transition={{delay:.8}} animate={{color:"#ffffff"}} className="  leading-[20vh] font-[anton] text-nowrap text-[10vw] ">PRATYUSH CHAUHAN</motion.h1>
+        </motion.div>
+      </div>
+     
+      
+
+
+      </motion.div>
+      
+ 
+      </div>
+      
+      
         </div>
-      </div>
-
-      <div className="flex flex-col h-[28vw] w-[60vw] items-center gap-5 scale-[0.9] justify-center mr-8">
-        <motion.h1
-          initial={{ opacity: 0, x: -250 ,letterSpacing:'-50px'}}
-          animate={{ opacity: 1, x: 0 ,letterSpacing:'0px'}}
-          transition={{ ease: "easeOut", duration: 0.6 }}
-          className="leading-[100%] p-4 text-white font-[poppins] font-thin text-[7vw]"
-        >
-          Hello!
-        </motion.h1>
-
-        <motion.h1
-          initial={{ opacity: 0, x: -50 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ ease: "easeOut", duration: 0.8 ,delay:0.4}}
-
-          className="leading-[100%] text-white font-[poppins] font-thin text-[5vw]"
-        >
-          I AM
-        </motion.h1>
-
-        <motion.h1
-          initial={{ opacity: 0, x: -50 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ ease: "easeOut", duration: 1 ,delay:.5}}
-          className="leading-[100%] text-white font-[poppins] font-thin text-[5vw]"
-        >
-          PRATYUSH CHAUHAN
-        </motion.h1>
-      </div>
-    </div>
   );
 };
 
