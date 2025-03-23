@@ -26,12 +26,9 @@ const ProblemSolving = () => {
   return (
     <div data-scroll  ref={tarRef} className='relative '>
         <div id="landing" className=' sticky top-0 overflow-hidden '>
-            
-            
-            <motion.h1   style={{x}} className='  text-amber-400 font-[anton] text-[10vw] ' > PROGRAMING AND</motion.h1>
-            <motion.h1   style={{x}} className='  text-amber-400 font-[anton] text-[10vw] ' > PROBLEM SOLVING</motion.h1>
-            <motion.h1   style={{x}} className='  text-amber-400 font-[anton] text-[10vw] ' > SKILLS </motion.h1>
-          
+            <motion.h1   style={{x}} className='md:leading-[20vh]  text-amber-400 font-[anton] text-[8vw] text-nowrap' >PROGRAMMING  <span className='text-zinc-900'>SPARKS CREATIVITY.PROBLEM-SOLVING DRIVES GROWTH.SKILLS DEFINE SUCCESS</span>.</motion.h1>  
+            <motion.h1  style={{x}} className='md:leading-[20vh]  text-amber-400 font-[anton] text-[8vw] text-nowrap' > PROBLEM-SOLVING  <span  className='text-zinc-900'>DRIVES GROWTH.SKILLS DEFINE SUCCESS.</span></motion.h1>  
+            <motion.h1   style={{x}} className='md:leading-[20vh]  text-amber-400 font-[anton] text-[8vw] text-nowrap' >SKILLS <span  className='text-zinc-900'> DEFINE SUCCESS.</span></motion.h1>  
         </div>
         <div data-scroll data-scroll-speed="0.6" className=" z-20 fast h-[10vh] w-full bg-blue-200 mix-blend-difference "></div>
         
@@ -65,6 +62,21 @@ const ProblemSolving = () => {
                
 
             </div>
+
+            <div data-scroll data-scroll-section data-scroll-speed="0" s className=" relative h-screen bg-sky-400 mix-blend-difference  flex justify-around  items-center ">
+            <motion.h1 initial={{scale:0.3}} whileInView={{scale:1}} className=' m-2 p-2 flex items-center justify-center text-black font-[anton] text-[13vw] ' >WEB DEVELOPMENT</motion.h1>
+            <motion.h1   initial={{scale:0.3}} whileInView={{scale:1}} className=' absolute left-1/3 top-1/5 m-2 p-2 flex items-center justify-center text-black font-[anton] text-[5vw] ' >REACT.JS</motion.h1>
+            <motion.h1   initial={{scale:0.3}} whileInView={{scale:1}} className=' absolute left-1/12 top-3/5 m-2 p-2 flex items-center justify-center text-black font-[anton] text-[5vw] ' >NEXT.JS</motion.h1>
+            <motion.h1   initial={{scale:0.3}} whileInView={{scale:1}} className=' absolute left-3/6 top-4/6 m-2 p-2 flex items-center justify-center text-black font-[anton] text-[5vw] ' >NODE.JS</motion.h1>
+            <motion.h1   initial={{scale:0.3}} whileInView={{scale:1}} className=' absolute left-[70%] top-[15%] m-2 p-2 flex items-center justify-center text-black font-[anton] text-[5vw] ' >DJANGO</motion.h1>
+            <motion.h1   initial={{scale:0.3}} whileInView={{scale:1}} className=' absolute left-[67%] top-[75%] m-2 p-2 flex items-center justify-center text-black font-[anton] text-[5vw] ' >MONGODB</motion.h1>
+            <motion.h1   initial={{scale:0.3}} whileInView={{scale:1}} className=' absolute left-[17%] top-[8%] m-2 p-2 flex items-center justify-center text-black font-[anton] text-[5vw] ' >EXPRESS</motion.h1>
+               
+
+            </div>
+
+
+          
 
 
            
