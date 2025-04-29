@@ -18,7 +18,7 @@ const About = () => {
     const rotate = useTransform(scrollYProgress, [0, 1], ["-5deg", "5deg"]); 
 
     return (
-        <div data-scroll data-scroll-speed="0" className="relative md:min-h-screen h-auto bg-blue-800 flex flex-col items-center justify-center">
+        <div data-scroll data-scroll-speed="0" className="relative md:min-h-screen h-auto mt-5  bg-blue-800 flex flex-col items-center justify-center">
             
        
             <motion.div 
@@ -38,7 +38,7 @@ const About = () => {
             <motion.div 
                 ref={scrollRef}
                 style={{ rotate }}
-                className="px-[5vw] py-[5vh] text-justify md:text-[1.5vw] text-[3vw] font-[poppins] text-white max-w-[800px]"
+                className="  px-[5vw] py-[5vh] text-justify md:text-[1.5vw] text-[3vw] font-[poppins] text-white max-w-[800px]"
             >
                 I am a passionate Full-Stack Developer currently pursuing my Computer Science Engineering degree at KIIT University. With a strong foundation in both front-end and back-end technologies, I enjoy building dynamic, scalable, and user-friendly web applications.
 

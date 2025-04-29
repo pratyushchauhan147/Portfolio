@@ -1,6 +1,13 @@
 import React, { useRef,useEffect,useState } from 'react'
 import { motion, useScroll, useTransform } from 'framer-motion';
+import NavBlob from '../components/NavBlob'
+import SkillSet from '../components/SkillSet';
 const ProblemSolving = () => {
+   useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+          
+      }, []);
+  
     const tarRef = useRef(null)
     const {scrollYProgress} = useScroll({target:tarRef});
     const [data, setData] = useState(null);
@@ -18,15 +25,16 @@ const ProblemSolving = () => {
 
     const x = useTransform(
         scrollYProgress,
-        [0, 0.4],
+        [0, 0.2],
         ['1%', "100%"]
       );
       
 
   return (
     <div data-scroll  ref={tarRef} className='relative '>
+      <NavBlob></NavBlob>
         <div id="landing" className=' sticky top-0 overflow-hidden '>
-            <motion.h1   style={{x}} className='md:leading-[20vh]  text-amber-400 font-[anton] text-[8vw] text-nowrap' >PROGRAMMING  <span className='text-zinc-900'>SPARKS CREATIVITY.PROBLEM-SOLVING DRIVES GROWTH.SKILLS DEFINE SUCCESS</span>.</motion.h1>  
+            <motion.h1   style={{x:x}} className='md:leading-[20vh]  text-amber-400 font-[anton] text-[8vw] text-nowrap' >PROGRAMMING  <span className='text-zinc-900'>SPARKS CREATIVITY.PROBLEM-SOLVING DRIVES GROWTH.SKILLS DEFINE SUCCESS</span>.</motion.h1>  
             <motion.h1  style={{x}} className='md:leading-[20vh]  text-amber-400 font-[anton] text-[8vw] text-nowrap' > PROBLEM-SOLVING  <span  className='text-zinc-900'>DRIVES GROWTH.SKILLS DEFINE SUCCESS.</span></motion.h1>  
             <motion.h1   style={{x}} className='md:leading-[20vh]  text-amber-400 font-[anton] text-[8vw] text-nowrap' >SKILLS <span  className='text-zinc-900'> DEFINE SUCCESS.</span></motion.h1>  
         </div>
@@ -74,6 +82,11 @@ const ProblemSolving = () => {
                
 
             </div>
+
+            <SkillSet></SkillSet>
+            <div className='h-screen w-full'></div>
+
+  
 
 
           
