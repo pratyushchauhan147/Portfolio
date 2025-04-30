@@ -3,14 +3,16 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import Work from '../components/Work';
 import NavBlob from '../components/NavBlob'
 import Whitework from '../components/Whitework';
-
+import { useNavigate } from 'react-router-dom';
 const Projects = () => {
-    
+    let navigate = useNavigate();
 
     useEffect(() => {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
+        window.scrollTo(0, 0);
+        
         
     }, []);
+    useEffect(() => console.log('Hi '), [])
 
 
     const tarRef = useRef(null)

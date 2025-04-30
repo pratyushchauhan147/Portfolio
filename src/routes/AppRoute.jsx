@@ -1,9 +1,10 @@
 import React from 'react'
 import Home from '../screens/Home'
 import ProblemSolving from '../screens/ProblemSolving'
-import { Route,BrowserRouter,Routes } from 'react-router-dom'
+import { Route,BrowserRouter,Routes,useLocation } from 'react-router-dom'
 import Projects from '../screens/Projects'
 import { useScroll, useTransform } from 'framer-motion'
+import ContactMe from '../screens/ContactMe'
 const AppRoutes = () => {
   useScroll
   return (
@@ -12,6 +13,7 @@ const AppRoutes = () => {
         <Route path='/'  element={<Home/>} />
         <Route path='/ps'  element={<ProblemSolving/>} />
         <Route path='/projects'  element={<Projects/>} />
+        <Route path='/contact'  element={<ContactMe/>} />
     </Routes>
     </BrowserRouter></div>
     

@@ -41,14 +41,42 @@ const Contact = () => {
   return (
     <section
       ref={Ref2}
-      className="relative w-full px-6 py-20 bg-black text-white "
+      className=" overflow-hidden relative w-full px-6 py-20 bg-black text-white "
     >
       {/* Contact Form */}
       <div className="relative z-10 max-w-2xl mx-auto text-center">
-        <h2 className="text-4xl font-bold mb-4">Contact Me</h2>
-        <p className="text-lg text-gray-300 mb-10">
+        <motion.h2 initial={{scale:2}} whileInView={{scale:1}} className="text-4xl overflow-hidden font-bold mb-4">Contact Me</motion.h2>
+
+
+        <motion.div initial={{opacity:0}} whileInView={{opacity:1}} className=" flex justify-center gap-6 text-3xl">
+          <a
+            href="https://github.com/pratyushchauhan147"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-purple-400 transition"
+          >
+            <FaGithub />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/pratyush-chauhan-5245b722b/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-purple-400 transition"
+          >
+            <FaLinkedin />
+          </a>
+          <a
+            href="mailto:pratyushchauhan147contact@gmail.com"
+            className="hover:text-purple-400 transition"
+          >
+            <FaEnvelope />
+          </a>
+        </motion.div>
+
+        <motion.p initial={{opacity:0}} whileInView={{opacity:1}} className="text-lg text-gray-300 mb-10">
           Got a question? Let's talk.
-        </p>
+        </motion.p>
+        
 
         <div className="space-y-6">
           <input
@@ -80,30 +108,7 @@ const Contact = () => {
         </div>
 
         {/* Social Icons */}
-        <div className="mt-12 flex justify-center gap-6 text-3xl">
-          <a
-            href="https://github.com/pratyushchauhan147"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-purple-400 transition"
-          >
-            <FaGithub />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/pratyush-chauhan-5245b722b/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-purple-400 transition"
-          >
-            <FaLinkedin />
-          </a>
-          <a
-            href="mailto:pratyushchauhan147contact@gmail.com"
-            className="hover:text-purple-400 transition"
-          >
-            <FaEnvelope />
-          </a>
-        </div>
+       
       </div>
 
       {/* Blobby Backgrounds */}
