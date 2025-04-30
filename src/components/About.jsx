@@ -18,7 +18,7 @@ const About = () => {
     const rotate = useTransform(scrollYProgress, [0, 1], ["-5deg", "5deg"]); 
 
     return (
-        <div data-scroll data-scroll-speed="0" className="relative md:min-h-screen h-auto mt-5  bg-blue-800 flex flex-col items-center justify-center">
+        <div data-scroll data-scroll-speed="0" className="relative md:min-h-screen h-auto mt-5 overflow-hidden  bg-blue-800 flex flex-col items-center justify-center">
             
        
             <motion.div 
@@ -29,7 +29,7 @@ const About = () => {
             <motion.div 
                 ref={boxRef2} 
                 style={{ height:height2 }}  
-                className="absolute top-0 left-[80%] w-[10vw] bg-white  mix-blend-exclusion md:mix-blend-normal"
+                className="  z-0  absolute top-0 left-[80%] w-[10vw] bg-white  mix-blend-exclusion md:mix-blend-normal"
             />
             
             <h1 className="text-[8vh] font-[anton] text-white">About Me</h1>

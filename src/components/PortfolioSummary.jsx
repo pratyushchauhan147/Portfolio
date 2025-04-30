@@ -27,7 +27,7 @@ const PortfolioSummary = () => {
         
 
   return (
-    <motion.div ref={tarRef} style={{backgroundColor:bg}} className=" text-white min-h-screen p-8 font-sans space-y-12  mb-12">
+    <motion.div ref={tarRef} style={{backgroundColor:bg}} className=" z-10 text-white min-h-screen p-8 font-sans space-y-12  mb-12">
       {/* Introduction */}
       <section className="text-center">
         <h1 className="text-4xl font-bold mb-2">Quick Summery</h1>
