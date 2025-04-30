@@ -54,16 +54,8 @@ const Projects = () => {
 
 
             </motion.div>
-
-            <motion.div initial={{x:'-100%'}} whileInView={{x:'0%'}} transition={{type:"linear"}} className='bg-white w-[100wv] flex justify-center items-center mt-4  p-2  h-[50vh]'>
-                <motion.img initial={{opacity:0}} whileInView={{opacity:1}}  transition={{delay:0.1}} className='h-[37vh] w-[37vh] ' src="iotlab2.png" alt="" />
-                <motion.div initial={{opacity:0}} whileInView={{opacity:1}}  transition={{delay:0.2}} className='w-4/5 h-[100%] rounded-2xl  p-2 border-2 border-zinc-300 '>
-                <motion.h1 initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay:0.22}}  className='text-zinc-800 text-[3vw] font-[anton]'>UI/UX Team Lead <span className='font-[poppins] text-zinc-500'>at <span className='text-blue-400'>IoT Lab,</span>KIIT</span></motion.h1>
-                <motion.p  initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay:0.24}} className='text-zinc-800 text-[1.5vw] font-[poppins]'>I joined IoT Lab as a Graphic Designer and UI/UX Designer in February 2023, and I now lead the design team. Over the past year, I have contributed to numerous events and have successfully led the design team for 5+ flagship events. This experience has provided me with valuable insights into team collaboration, project execution, and leadership in a dynamic environment. </motion.p>
-                </motion.div>
-
-            </motion.div>
-            <Whitework direction={'100%'} image={'kiitfest.jpg'} title={"Organizer"} text={""} under={"KIITFEST8.0"} ></Whitework>
+            <Whitework direction={'-100%'} image={'iotlab2.png'} title={"UI/UX Team Lead"} text={"I joined IoT Lab as a Graphic Designer and UI/UX Designer in February 2023, and I now lead the design team. Over the past year, I have contributed to numerous events and have successfully led the design team for 5+ flagship events. This experience has provided me with valuable insights into team collaboration, project execution, and leadership in a dynamic environment."} under={"IoT Lab,"} ></Whitework>
+            <Whitework direction={'100%'} image={'kiitfest.jpg'} title={"Organizer"} text={"I worked as a Technical Organiser for KIITFEST 8.0 in 2025, where I was part of the Organising Committee responsible for planning and managing various technical events. My role involved coordinating event logistics, assisting with technical setups, and ensuring smooth execution during competitions and workshops. This experience helped me develop strong teamwork, communication, and problem-solving skills while working under tight deadlines during one of KIIT's largest techno-management fests."} under={"KIITFEST8.0"} ></Whitework>
 
            <div  data-scroll className="flex flex-row flex-wrap justify-center items-center m-[10vh] ">
                 <div >
@@ -86,7 +78,7 @@ const Projects = () => {
                 </div> 
 
                 <div >
-                <Work projectName="SecSoc" projectIs="Chat Room" projectDesc="An anonymous chat room where people with the same room code can communicate, made with basics of Web Development.• Front-end: HTML/CSS, JavaScript, AJAX for real-time updates• Back-end: Django, Python" projectImage="secsoc.png" ></Work>
+                <Work projectName="CityCast" projectIs="Weather Forecast Dashboard" projectDesc="A simple Minimal Weather Dashboard made by Pratyush Chauhan , This Page uses OpenWeather APIs with React + Vite as well as Tailwind css , added animations using Framer Motion" projectImage="weather.png" ></Work>
                 </div> 
             </div>
 

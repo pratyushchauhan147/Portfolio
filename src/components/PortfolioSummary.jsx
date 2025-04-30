@@ -30,11 +30,11 @@ const PortfolioSummary = () => {
     <motion.div ref={tarRef} style={{backgroundColor:bg}} className=" text-white min-h-screen p-8 font-sans space-y-12  mb-12">
       {/* Introduction */}
       <section className="text-center">
-        <h1 className="text-4xl font-bold mb-2">RESUME</h1>
-        <p className="text-gray-400">
+        <h1 className="text-4xl font-bold mb-2">Quick Summery</h1>
+        <p className="text-gray-200">
           Full-Stack Developer & UI/UX Designer | KIIT CSE'26 | Design Lead @ IoT Lab
         </p>
-        <div className="mt-4 space-x-4 text-sm text-blue-400">
+        <div className="mt-4 space-x-4 font-semibold text-sm text-zinc-900">
           <a href="mailto:pratyushchauhan147@gmail.com">Email</a>
           <a href="https://www.linkedin.com/in/pratyush-chauhan-5245b722b/" target="_blank">LinkedIn</a>
           <a href="https://github.com/pratyushchauhan147" target="_blank">GitHub</a>

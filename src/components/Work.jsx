@@ -21,7 +21,7 @@ const Work = (props) => {
   return (
     <div data-scroll className='p-4 w-[60vw] h-[80vw] md:w-[30vw] md:h-[40vw] mt-10 mix-blend-difference' >
         <div className='w-full h-full'>
-            <motion.div initial={{rotate:"0deg" ,scale:0.3,filter: "blur(40px)",backgroundColor:bg}} whileHover={{rotate:"0deg",backgroundColor:"#222222"}} transition={{delay:"0", type:"spring"}} whileInView={{rotate:"10deg" ,filter:"blur(0px)" , scale:1}}  className="bg-red-600 p-2 h-[90%] rounded-2xl w-full">
+            <motion.div initial={{rotate:"0deg" ,scale:0.3,filter: "blur(40px)",backgroundColor:"blue"}} whileHover={{rotate:"0deg",backgroundColor:"#222222"}} transition={{delay:"0", type:"spring"}} whileInView={{rotate:"10deg" ,filter:"blur(0px)" , scale:1}}  className="bg-red-600 p-2 h-[90%] rounded-2xl w-full">
                 <h1 className='font-[anton] text-[6vh]'>{props.projectName}</h1>
                 <h1 className='font-[anton] text-[3vh]'>{props.projectIs}</h1>
                 <div className='mt-[2vh]'>
