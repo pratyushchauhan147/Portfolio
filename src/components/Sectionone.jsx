@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
-import Earth from "./earth";
+import Earth from "./Earth";
 const Sectionone = () => {
   const [rotate, setRotate] = useState(0);
   
