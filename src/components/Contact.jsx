@@ -45,7 +45,7 @@ const Contact = () => {
     >
       {/* Contact Form */}
       <div className="relative z-10 max-w-2xl mx-auto text-center">
-        <motion.h2 initial={{scale:2}} whileInView={{scale:1}} className="text-4xl overflow-hidden font-bold mb-4">Contact Me</motion.h2>
+        <motion.h2 initial={{scale:2}} whileInView={{scale:1}} className="text-[3vh] md:text-4xl overflow-hidden font-bold md:mb-4">Contact Me</motion.h2>
 
 
         <motion.div initial={{opacity:0}} whileInView={{opacity:1}} className=" flex justify-center gap-6 text-3xl">

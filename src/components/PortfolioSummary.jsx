@@ -96,17 +96,33 @@ const PortfolioSummary = () => {
         <ul className="space-y-2 text-white text-sm">
           <li>
             <a href="https://buzz-buy-gamma.vercel.app/about" target="_blank">
-              BuzzBuy – E-commerce site for digital art (Node.js, MongoDB, EJS, Tailwind)
+              BuzzBuy - E-commerce site for digital art (Node.js, MongoDB, EJS, Tailwind)
+            </a>
+          </li>
+          <li>
+            <a href="https://adore-one.vercel.app/about" target="_blank">
+              Adore - A Social Media Platform (Next.js, Firebase, Tailwind)
+            </a>
+          </li>
+          <li>
+            <a href="https://rouler.vercel.app/about" target="_blank">
+              Rouler- Trainer Marketplace (Next.js, Firebase, MongoDB, Tailwind)
             </a>
           </li>
           <li>
             <a href="https://pratyushchauhan.pythonanywhere.com/" target="_blank">
-              SecSoc – Anonymous chat room (Django, AJAX)
+              SecSoc - Anonymous chat room (Django, AJAX)
             </a>
           </li>
           <li>
             <a href="https://itinary-gen-with-gem.vercel.app/" target="_blank">
-              GemTrav – AI Itinerary Generator (React, Gemini API, Framer Motion)
+              GemTrav - AI Itinerary Generator (React, Gemini API, Framer Motion)
+            </a>
+          </li>
+          
+          <li>
+            <a href="https://weather-dashboard-nine-xi.vercel.app/" target="_blank">
+             CityCast- Weather Dashboard (React, openWeather API)
             </a>
           </li>
         </ul>

@@ -64,27 +64,34 @@ const Projects = () => {
             
            <div  data-scroll className="flex flex-row flex-wrap justify-center items-center m-[10vh] ">
                 <div >
-                <Work projectName="BuzzBuy" projectIs="E-commerce" projectDesc="A clean E-commerce website of a Digital Painting Store for both customers and owner the site uses
+                <Work url="https://buzz-buy-gamma.vercel.app/about" projectName="BuzzBuy" projectIs="E-commerce" projectDesc="A clean E-commerce website of a Digital Painting Store for both customers and owner the site uses
                  For Front-end it uses : Embedded JavaScript , Tailwind CSS
                  For Back-end it uses : Nodejs , Express.js , Mongoose , MongoDB" projectImage="buzzbuy.png" ></Work>
                 </div>
+                    <div >
+                <Work url="https://adore-one.vercel.app/about" projectName="Adore" projectIs="Social Media Platform" projectDesc=" A full-stack social media platform enabling users to share content, connect with others, and engage through real-time interactions. The Project uses NextJs , JavaScript, Tailwind, Firebase, nextAuth, nextAPI, socket.io" projectImage="adoreimg.png" ></Work>
+                </div> 
 
+                <div >
+                <Work url="https://rouler.vercel.app/about" projectName="Rouler" projectIs="Social Media Platform" projectDesc=" At Rouler, the mission is to bridge the gap between passionate trainers and aspiring trainees through a reliable and streamlined platform. The Project uses NextJs , JavaScript, Tailwind, Firebase, nextAuth, nextAPI, mongoDB, mongoose" projectImage="rouler.png" ></Work>
+                </div> 
                 <div >
 
 
-                <Work projectName="GemTrav" projectIs="Itinarary Generator" projectDesc=" A dynamic and animated website that generates travel itinerary using Gemini API.• Technologies: React.js, Framer-motion, JavaScript, Gemini API" projectImage="gemtrav2.png" ></Work>
+                <Work projectName="GemTrav" projectIs="Itinarary Generator" projectDesc=" A dynamic and animated website that generates travel itinerary using Gemini API.• Technologies: React.js, Framer-motion, JavaScript, Gemini API" projectImage="gemtrav2.png" url="https://itinary-gen-with-gem.vercel.app/"  ></Work>
 
 
 
                 </div>
 
                 <div >
-                <Work projectName="SecSoc" projectIs="Chat Room" projectDesc="An anonymous chat room where people with the same room code can communicate, made with basics of Web Development.• Front-end: HTML/CSS, JavaScript, AJAX for real-time updates• Back-end: Django, Python" projectImage="secsoc.png" ></Work>
+                <Work url="https://pratyushchauhan.pythonanywhere.com/" projectName="SecSoc" projectIs="Chat Room" projectDesc="An anonymous chat room where people with the same room code can communicate, made with basics of Web Development.• Front-end: HTML/CSS, JavaScript, AJAX for real-time updates• Back-end: Django, Python" projectImage="secsoc.png" ></Work>
                 </div> 
 
                 <div >
-                <Work projectName="CityCast" projectIs="Weather Forecast Dashboard" projectDesc="A simple Minimal Weather Dashboard made by Pratyush Chauhan , This Page uses OpenWeather APIs with React + Vite as well as Tailwind css , added animations using Framer Motion" projectImage="weather.png" ></Work>
+                <Work url="https://weather-dashboard-nine-xi.vercel.app/" projectName="CityCast" projectIs="Weather Forecast Dashboard" projectDesc="A simple Minimal Weather Dashboard made by Pratyush Chauhan , This Page uses OpenWeather APIs with React + Vite as well as Tailwind css , added animations using Framer Motion" projectImage="weather.png" ></Work>
                 </div> 
+                
             </div>
 
 
